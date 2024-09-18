@@ -9,7 +9,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="bg-blue-50">
 
 
     <main class="text-center mt-14">
@@ -28,20 +28,20 @@
                                         <label class="label">
                                             <span class="label-text">Mobile Number</span>
                                         </label>
-                                        <input type="email" placeholder="Enter your number" class="input input-bordered" required />
+                                        <input id="inpNumber" type="text" placeholder="Enter your number" class="input rounded-full input-bordered" required />
                                     </div>
                                     <div class="form-control">
                                         <label class="label">
                                             <span class="label-text">4 Digit Pin</span>
                                         </label>
-                                        <input type="password" placeholder="Enter 4 Digit Pin" class="input input-bordered"
+                                        <input id="inpPassword" type="password" placeholder="Enter 4 Digit Pin" class="input rounded-full input-bordered"
                                             required />
                                         <!-- <label class="label">
                                             <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
                                         </label> -->
                                     </div>
                                     <div class="form-control mt-6 ">
-                                        <button class="btn rounded-full text-xl btn-primary">Login</button>
+                                        <button id="btn" class="btn rounded-full text-xl btn-primary">Login</button>
                                     </div>
                                 </form>
                             </div>
@@ -58,6 +58,7 @@
 
     </main>
 
+    <script src="login.js"></script>
 
 </body>
 
