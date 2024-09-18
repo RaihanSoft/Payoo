@@ -2,28 +2,40 @@ document.getElementById('btn').addEventListener('click', function(event){
     event.preventDefault()
 
 //amount
-    const inpAmount = document.getElementById('amount').value
-    console.log(inpAmount);
+    const inpAmount2 = document.getElementById('amount').value
+    const inpAmount =  Number(inpAmount2)
+        console.log('input amount',inpAmount);
 
 // pin number
     const inpPin = document.getElementById('inpPin')
     const pinNumber =  inpPin.value;
-    console.log(pinNumber);
 
 
-    // const currentAmount = document.getElementById('currentAmount')
-    // const currenA = currentAmount.innerText;
-    // console.log(currenA);
+     if(pinNumber === '4321'){
+
+        const currentAmount = document.getElementById('currentAmount')
+        const currenA = Number(currentAmount.innerText);
+        console.log('current amount',currenA);
 
 
-    
-    // const pin = inpPin.value
-    //  if(pin === '4321'){
-
-    //     console.log("valid pin");
-    //     currenA = currenA + inpAmount.value
+        let newBalance =  currenA + inpAmount
+        console.log("Total Amount",newBalance);
 
 
-    //  }
+        currentAmount.innerText = newBalance
+     
+
+       
+        
+
+
+     }
+     else{
+        alert("Invalid Pin Number")
+     }
+
+
+
+
 
     })
