@@ -1,6 +1,6 @@
 const btn = document.getElementById('btn')
 btn.addEventListener('click', function (event) {
-    event.preventDefault
+    event.preventDefault()
     // phone number 
     
     const inpNumber = document.getElementById('inpNumber').value
@@ -12,7 +12,7 @@ btn.addEventListener('click', function (event) {
 
     if(inpNumber === '019' && inpPassword === '1234'){
         console.log("your log in");
-
+        window.location.href = "/home.html";    
     }
     else{
         alert("Wrong phone number or pin");
