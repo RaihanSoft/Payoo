@@ -13,7 +13,7 @@ document.getElementById('btn1').addEventListener('click', function(event){
 
      if(pinNumber === '4321'){
 
-        const currentAmount = document.getElementById('currentAmount1')
+        const currentAmount = document.getElementById('currentAmount')
         const currenA = Number(currentAmount.innerText);
         console.log('current amount',currenA);
 

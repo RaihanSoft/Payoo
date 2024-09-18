@@ -23,7 +23,7 @@
 
     <div class="stats shadow mt-14">
         <div class="stat">
-          <div class="stat-value"><span id="currentAmount1" >9400</span></div>
+          <div class="stat-value"><span id="currentAmount" >9400</span></div>
           <div class="stat-desc">Available Banalce</div>
         </div>
       </div>
@@ -35,8 +35,8 @@
 
 
 
-        <button class="btn btn-lg">Add Money</button>
-        <button class="btn btn-lg">Cash Out</button>
+        <button id="addMoney" class="btn btn-lg">Add Money</button>
+        <button id="cashOut" class="btn btn-lg">Cash Out</button>
 
 
 
@@ -46,7 +46,7 @@
       <!-- add money form starts here -->
 
 
-      <div class="card bg-gray-300 w-full max-w-sm shrink-0 shadow-2xl">
+      <div id="hid1" class="card bg-gray-300 w-full max-w-sm shrink-0 shadow-2xl ">
         <form class="card-body">
             <div class="form-control">
                 <label class="label">
@@ -74,13 +74,13 @@
 
       <!-- cash out starts here -->
 
-      <div class="card bg-gray-300 w-full max-w-sm shrink-0 shadow-2xl hidden">
+      <div id="hid" class="card bg-gray-300 w-full max-w-sm shrink-0 shadow-2xl hidden">
         <form class="card-body">
             <div class="form-control">
                 <label class="label">
                     <span class="label-text">Amount</span>
                 </label>
-                <input  id="amount1" type="text" placeholder="Enter your amount" class="input rounded-full input-bordered" required />
+                <input  id="amount1" type="text" placeholder="Enter cashout amount" class="input rounded-full input-bordered" required />
             </div>
             <div class="form-control">
                 <label class="label">
@@ -116,9 +116,12 @@
       </div>
 </main>
 
+
+
 <script src="home.js"></script>
 <script src="cashout.js"></script>
 <script src="featurs.js"></script>
+
     
 </body>
 </html>
